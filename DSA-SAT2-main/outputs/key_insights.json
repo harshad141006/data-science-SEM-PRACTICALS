@@ -1,0 +1,66 @@
+{
+    "dataset_summary": {
+        "total_cleaned_incidents": 5976,
+        "minor_count": 4100,
+        "serious_count": 1645,
+        "fatal_count": 231,
+        "severe_count": 1876,
+        "severe_percentage": 31.39
+    },
+    "findings": [
+        {
+            "finding_id": 1,
+            "title": "Severe Class Imbalance Across Accident Severity Classes",
+            "category": "Severity Distribution",
+            "description": "The dataset displays pronounced class imbalance across 5,976 cleaned records. Minor incidents account for 4,100 (68.6%), Serious incidents account for 1,645 (27.5%), and Fatal-severity crashes represent a critical minority of 231 (3.9% of recorded accidents). Collectively, severe incidents (Serious + Fatal) make up 1,876 (31.4%).",
+            "metric_value": 3.87,
+            "metric_unit": "fatal crash share (%)"
+        },
+        {
+            "finding_id": 2,
+            "title": "Central Market Junction Leads Total Volume; East Lake Road Leads Fatal Crashes",
+            "category": "Hotspot Analysis",
+            "description": "Central Market Junction recorded the highest overall accident volume (445 incidents, including 147 severe cases, 33.0% severe incident share). However, East Lake Road exhibited the highest fatal crash count with 24 fatal-severity crashes (7.5% fatal crash share across 320 recorded incidents), followed by Outer Loop - Sector A with 19 fatal crashes (6.9%). Targeted interventions must distinguish high-frequency minor collision sites from high-fatality corridors. (Note: These reflect observed crash counts rather than exposure-adjusted per-km risk).",
+            "top_volume_location": "Central Market Junction",
+            "top_fatal_location": "East Lake Road",
+            "metric_value": 24,
+            "metric_unit": "fatal crashes at top corridor"
+        },
+        {
+            "finding_id": 3,
+            "title": "Bimodal Commuter Peaks Drive Volume, but Night Hours Exhibit Highest Fatal Crash Share",
+            "category": "Temporal Patterns",
+            "description": "Accident occurrence peaks sharply during commuter rush hours, led by 18:00 (608 incidents) and 08:00 (547 incidents). Designated peak periods encompass 3,624 accidents (60.6% of total). Conversely, while Night hours (21:00-04:59) represent only 573 incidents (9.6%), they exhibit the highest fatal crash proportion at 4.71% (27 fatal crashes), nearly double the Afternoon fatal share of 2.70%.",
+            "peak_hour": 18,
+            "night_fatal_crash_share": 4.71,
+            "metric_unit": "fatal crash share at night (%)"
+        },
+        {
+            "finding_id": 4,
+            "title": "Adverse Weather (Fog & Light Rain) Substantially Amplifies Severe Outcomes",
+            "category": "Weather Risks",
+            "description": "Under Clear conditions, the fatal crash share is 3.18% (25.5% serious). In dense Fog conditions (321 incidents), the fatal crash proportion surges to 8.10% and the combined severe accident share reaches 45.48% (8.1% fatal, 37.4% serious). Light rain conditions also elevated severe incident share to 39.3%, indicating that compromised visibility and slick surfaces significantly increase crash severity.",
+            "fog_fatal_share": 8.1,
+            "clear_fatal_share": 3.18,
+            "metric_unit": "fatal crash share in fog (%)"
+        },
+        {
+            "finding_id": 5,
+            "title": "Highway Links and Higher Speed Limits Strongly Associated with Fatal Crashes",
+            "category": "Road Infrastructure",
+            "description": "Highway Links exhibited the highest fatal crash proportion at 6.03% (63 fatal crashes out of 1044 incidents), more than double the proportion on Collector Roads (2.68%). Across all incidents, fatal crashes occurred on road segments with a mean nominal speed limit of 48.4 km/h, compared to 44.3 km/h for minor crashes.",
+            "highway_fatal_share": 6.03,
+            "collector_fatal_share": 2.68,
+            "metric_unit": "fatal crash share on highway links (%)"
+        },
+        {
+            "finding_id": 6,
+            "title": "Motorcyclists Suffer Disproportionate Severity Among Vehicle Categories",
+            "category": "Vulnerable Road Users",
+            "description": "Incidents involving Motorcycles (1602 incidents) experienced a 5.06% fatal crash proportion and 30.6% serious injury share (35.7% total severe), compared to a 3.48% fatal crash share for passenger cars. Two-wheeler riders remain exceptionally vulnerable to high-impact trauma, requiring dedicated lane separation and protective enforcement.",
+            "motorcycle_fatal_share": 5.06,
+            "car_fatal_share": 3.48,
+            "metric_unit": "fatal crash share for motorcycles (%)"
+        }
+    ]
+}

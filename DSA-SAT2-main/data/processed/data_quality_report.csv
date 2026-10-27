@@ -1,0 +1,20 @@
+Dataset,Column,Data_Type,Total_Rows,Null_Count,Null_Pct,Unique_Values,Duplicate_Rows,Duplicate_IDs,Quality_Notes
+accidents.csv,incident_id,object,6040,0,0.0,6000,40,40,None detected
+accidents.csv,date,object,6040,0,0.0,731,40,40,None detected
+accidents.csv,time,object,6040,0,0.0,1184,40,40,None detected
+accidents.csv,location,object,6040,151,2.5,20,40,40,151 missing locations
+accidents.csv,severity,object,6040,0,0.0,7,40,40,"Invalid labels: {'Unknown': 8, 'Critical': 6, '0': 5, '5': 5}"
+roads.csv,incident_id,object,6000,0,0.0,6000,0,0,None detected
+roads.csv,road_type,object,6000,0,0.0,21,0,0,16 case/whitespace variations (21 raw vs 5 standard)
+roads.csv,junction_type,object,6000,0,0.0,6,0,0,None detected
+roads.csv,speed_limit_kmph,int64,6000,0,0.0,24,0,0,"18 invalid speed limits outside [20, 80] km/h (min: -20, max: 1000)"
+weather.csv,incident_id,object,6000,0,0.0,6000,0,0,None detected
+weather.csv,rainfall_mm,float64,6000,366,6.1,626,0,0,None detected
+weather.csv,visibility_km,float64,6000,397,6.62,866,0,0,None detected
+weather.csv,weather_condition,object,6000,300,5.0,5,0,0,300 missing conditions
+traffic.csv,incident_id,object,6000,0,0.0,6000,0,0,None detected
+traffic.csv,traffic_volume_vph,int64,6000,0,0.0,3361,0,0,"24 volume outliers outside [50, 10000] vph (min: -100, max: 130000)"
+traffic.csv,peak_flag,object,6000,0,0.0,2,0,0,None detected
+vehicles.csv,incident_id,object,6000,0,0.0,6000,0,0,None detected
+vehicles.csv,vehicle_category,object,6000,0,0.0,7,0,0,None detected
+vehicles.csv,vehicle_count,int64,6000,0,0.0,4,0,0,None detected

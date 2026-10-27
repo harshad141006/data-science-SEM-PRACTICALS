@@ -1,0 +1,6 @@
+dataset,raw_rows,unique_incident_ids,notes
+accidents.csv,6040,6000,"Duplicates, missing locations, invalid severity labels intentionally included"
+roads.csv,6000,6000,Inconsistent road_type labels and speed-limit outliers intentionally included
+weather.csv,6000,6000,Missing weather observations intentionally included
+traffic.csv,6000,6000,Extreme traffic-volume outliers intentionally included
+vehicles.csv,6000,6000,One representative vehicle-category record per incident
